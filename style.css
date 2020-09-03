@@ -202,6 +202,38 @@ header {
     border-radius: 10px;
 }
 
+/* Skills Section */
+
+.skills {
+    opacity: 0;
+    transform: translateY(100px)
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+
+}
+
+.skills-item {
+    background: #3f51b5;
+    color: white;
+    padding: 20px 40px;
+    border: none;
+    border-radius: 10px;
+    margin: 5px 5px;
+    font-size: 20px;
+    box-shadow: 5px 5px 10px gray;
+
+}
+
+@media (max-width: 800px) {
+    .skills-items {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
+
 /* Projects */
 .projects .grid {
     flex-direction: column;
@@ -337,6 +369,7 @@ p.project-desc[data-scroll="in"]{
     transform: translateX(0);
 }
 
+.skills[data-scroll="in"],
 .about-me[data-scroll="in"],
 .project-btn[data-scroll="in"]{
     opacity: 1;
